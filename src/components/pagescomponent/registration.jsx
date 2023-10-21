@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import "./styles.css";
+import "./styles.register.css";
 const Registraton = () => {
   return (
     <div className="content-wrapper my-12">
