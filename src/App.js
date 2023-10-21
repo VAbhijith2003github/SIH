@@ -1,8 +1,11 @@
-import Registraton from "./components/pagescomponent/registration";
+// import Registraton from "./components/pagescomponent/registration";
+import Homepage from "./components/pagescomponent/homepage"
+
 function App() {
   return (
     <div className="App">
-      <Registraton/>
+      <Homepage/>
+      {/* <Registraton/> */}
     </div>
   );
 }
