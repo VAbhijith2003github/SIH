@@ -17,7 +17,7 @@ const HomePage = () => {
         <Header />
         <Navbarcomp />
         <img src={landingimg} alt="" className="landingimg" id="landingimg" />
-        <div className="bannertext">
+        <div className="bannertext container-fluid">
         <p style={{fontSize:"3rem",color:"white"}}>"ACCESIBILITY TO EDUCATION IS A BASIC HUMAN RIGHT"</p>
         </div>
       </section>
