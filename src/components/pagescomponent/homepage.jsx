@@ -6,27 +6,32 @@ import Header from "../reusablecomponents/header";
 // import Features from "../reusablecomponents/features";
 // import Resources from "../reusablecomponents/resource";
 // import AboutUs from "../reusablecomponents/header";
-// import Footer from "../reusablecomponents/footer";
+import Footer from "../reusablecomponents/footer";
+import landingimg from "../../images/landingimg.jpg";
+import Navbarcomp from "../reusablecomponents/navbar";
 
-import landingimg from "../../images/landingimg.jpg"
-
-const HomePage=()=>{
-    return(
-        <>
-        <div className="landing">
-        <Header/>
-        <img src={landingimg} alt="" className="landingimg"/>
+const HomePage = () => {
+  return (
+    <>
+      <section className="landing" id="landing">
+        <Header />
+        <Navbarcomp />
+        <img src={landingimg} alt="" className="landingimg" id="landingimg" />
+        <div className="bannertext">
+        <p style={{fontSize:"3rem",color:"white"}}>"ACCESIBILITY TO EDUCATION IS A BASIC HUMAN RIGHT"</p>
         </div>
-        {/* <Navbar/>
+      </section>
+      {/* <Navbar/>
         <div>
         <Banner/>
         </div>
         <Vision/>
         <Features/>
         <Resources/>
-        <AboutUs/>
-        <Footer/> */}
-        </>
-    )};
+        <AboutUs/> */}
+        <Footer/> 
+    </>
+  );
+};
 
-    export default HomePage;
+export default HomePage;
