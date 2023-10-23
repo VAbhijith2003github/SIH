@@ -242,3 +242,67 @@ ul a {
 #backtotop :visited {
   outline: none;
 }
+
+
+/*################################################### resources ################################*/  
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body {
+    background-image: url('https://i.postimg.cc/FRC0yS3h/pexels-scott-webb-2824173.webp'); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.section-title {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card {
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 200px;
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    max-width: 80%;
+    height: 50%;
+    
+    border-radius: 50%;
+    padding-top: 5px;
+}
+
+.card-content {
+    padding: 10px;
+    text-align: center;
+    height: 50%;
+    box-sizing: border-box;
+}
+
+.card-title {
+    font-size: 20px;
+    margin: 0;
+    padding: 5px;
+}
+
+
+@media (min-width: 768px) {
+    .card {
+        transition: transform 0.2s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+}

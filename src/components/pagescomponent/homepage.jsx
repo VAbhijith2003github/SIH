@@ -4,11 +4,13 @@ import Header from "../reusablecomponents/header";
 // import Banner from "../reusablecomponents/banner";
 // import Vision from "../reusablecomponents/vision";
 // import Features from "../reusablecomponents/features";
-// import Resources from "../reusablecomponents/resource";
 // import AboutUs from "../reusablecomponents/header";
+import Resource from "../reusablecomponents/resource";
 import Footer from "../reusablecomponents/footer";
 import landingimg from "../../images/landingimg.jpg";
 import Navbarcomp from "../reusablecomponents/navbar";
+
+
 
 const HomePage = () => {
   return (
@@ -29,6 +31,7 @@ const HomePage = () => {
         <Features/>
         <Resources/>
         <AboutUs/> */}
+        <Resource/>
         <Footer/> 
     </>
   );
