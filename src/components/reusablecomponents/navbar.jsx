@@ -16,8 +16,8 @@ const Navbarcomp=()=>{
   <a href="/courses" className="navitem">COURSES</a>
   <a href="/administration" className="navitem">ADMINISTRATION</a>
   <a href="#about" className="navitem">CONTACT</a>
-  <a id="searchbar"><input type="text" className="search-bar"/></a>
-  <a href="#about" className="navitem">SIGN IN</a>
+  <a id="searchbar"><input type="text" className="search-bar" placeholder="Courses" id="search"/></a>
+  <a href="#about" className="navitem">SIGN&nbsp;IN</a>
   <a href="javascript:void(0);" class="icon" onClick={myFunction} >
     <i class="fa fa-bars"></i>
   </a>
