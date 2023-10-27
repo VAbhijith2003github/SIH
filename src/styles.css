@@ -26,6 +26,7 @@ body::-webkit-scrollbar-thumb {
   margin: 0;
   padding: 8px 0px 0px 0px;
   border: 0;
+
 }
 .logo {
   border-radius: 100%;
@@ -81,7 +82,7 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   bottom: 300px;
 }
-/*################################################### Navbar ################################*/
+/*################################################### Navbar ##################################################################*/
 .topnav {
   background: linear-gradient(to right, #000000, #4d4d4d);
   width: 100%;
@@ -95,6 +96,8 @@ body::-webkit-scrollbar-thumb {
   margin-top: 5px;
   position: sticky;
   top: 0px;
+  backdrop-filter: blur(4.6px);
+  -webkit-backdrop-filter: blur(4.6px);
 }
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -150,7 +153,9 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+/* The "responsive" class is added to the topnav with JavaScript when the 
+user clicks on the icon. This class makes the topnav look good on small
+ screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 1200px) {
   .topnav.responsive {
     position: sticky;
@@ -183,7 +188,7 @@ body::-webkit-scrollbar-thumb {
   font-weight: bolder;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
 }
-/*################################################### Footer ################################*/
+/*################################################### Footer ##################################################################*/
 footer {
   font-family: "Poppins", sans-serif;
   width: 100%;
@@ -264,4 +269,121 @@ ul a {
 }
 #backtotop :visited {
   outline: none;
+}
+
+/*###################################################### login ##################################################*/
+.loginpage
+{
+  width: 100vw;
+  height: 100vh;
+}
+.logindiv {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  background: rgba(162, 162, 162, 0.29);
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.6px);
+  -webkit-backdrop-filter: blur(4.6px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 640px;
+  width: 30%;
+  min-width: 400px;
+  padding: 30px 50px 30px 50px;
+  background-color: rgba(163, 163, 163, 0.4);
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.logindiv input
+{
+    display: flex;
+    justify-self: center;
+    outline: white;
+    border-radius: 15px;
+    border: none;
+    padding: 10px 50px;
+}
+.logindiv input::placeholder
+{
+  color: #0000007e;
+}
+#loginbutton
+{
+  width: 300px;
+  display: flex;
+  justify-self: center;
+  outline: white;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  letter-spacing: 5px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  padding:15px 5px;
+  justify-content: center;
+  background-color: #01ca1f7d;
+  margin: 20px 0px;
+  backdrop-filter: blur(8.6px);
+  -webkit-backdrop-filter: blur(4.6px);
+
+  box-shadow: 
+  0 0 10px 0 rgba(0, 0, 0, 0.1),
+  0 2px 4px 0 rgba(0, 0, 0, 0.1),
+  0 4px 8px 0 rgba(0, 0, 0, 0.1),
+  0 3px 12px 0 rgba(0, 0, 0, 0.1);
+}
+#signinwithgoogle
+{
+  width: 300px;
+  display: flex;
+  outline: white;
+  border-radius: 15px;
+  border: none;
+  background-color: #4d4d4d00;
+  backdrop-filter: blur(8.6px);
+  -webkit-backdrop-filter: blur(4.6px);
+  color: white;
+  letter-spacing: 2px;
+  padding:10px;
+  
+  box-shadow: 
+  0 0 10px 0 rgba(0, 0, 0, 0.1),
+  0 2px 4px 0 rgba(0, 0, 0, 0.1),
+  0 4px 8px 0 rgba(0, 0, 0, 0.1),
+  0 3px 12px 0 rgba(0, 0, 0, 0.1);
+}
+.logindiv label
+{
+  font-size: 20px;
+  padding: 10px 0px 5px 10px;
+}
+.logindiv button img
+{
+  padding:0px 15px;
+  position: relative;
+  top: 5px;
+}
+#createnewaccount
+{
+  outline: none;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.750);
+  padding: 30px 0px;
+}
+#createnewaccount:active
+{
+  outline: none;
+  text-decoration: none;
+  color: white;  
+}
+#createnewaccount:hover
+{
+  color: rgba(255, 255, 255); 
 }
