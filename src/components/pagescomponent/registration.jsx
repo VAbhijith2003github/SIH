@@ -8,7 +8,7 @@ const Registraton = () => {
       <div className="container">
         <div className="mt-n5"></div>
         <div className="row">
-          <form id="application-form">
+          <form id="application-form" action="http://localhost:3001/register">
             <input type="hidden" />
             <div className="my-8">
               <div className="alert alert-danger" style={{ display: "none" }}>
