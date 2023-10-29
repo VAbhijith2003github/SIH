@@ -4,25 +4,47 @@ import bg from "../../images/visionbg.webp";
 import google from "../../images/google.png";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { app } from "../../firebase-config.js";
+import { getAuth, signInWithEmailAndPassword,signInWithRedirect } from "firebase/auth";
+import "firebase/auth";
+import { GoogleAuthProvider } from "firebase/auth";
 
 const Login = () => {
-  const navigate = useNavigate();
-
-  const handleSubmit = (e) => {
+    const navigate = useNavigate();
+    const provider = new GoogleAuthProvider();
+    const auth = getAuth(app);
+    
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
-    axios
+
+    await axios
       .post("http://localhost:3001/login", { email, password })
       .then((response) => {
         console.log(response.data);
-        navigate("/");
       })
       .catch((error) => {
         console.error("Error:", error);
       });
-  };
-  return (
+
+      signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          // Signed in 
+          const user = userCredential.user;
+          console.log(user.email);
+          navigate("/");
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          alert(`invalid credentials / Technical error ${errorCode} ==> ${errorMessage}`);
+        });
+    };
+    const Loginwithgoogle=async()=>{
+        signInWithRedirect(auth, provider);
+    }
+    return (
     <>
       <img src={bg} alt="loginbackground" className="loginpage" />
       <div className="logindiv">
@@ -48,6 +70,7 @@ const Login = () => {
             name="email"
             id="email"
             placeholder="youremail@org.com"
+            required
           />
           <br />
           <label htmlFor="password">PASSWORD</label>
@@ -56,18 +79,19 @@ const Login = () => {
             name="password"
             id="password"
             placeholder="password"
+            required
           />
           <br />
           <button type="submit" id="loginbutton">
             LOGIN
           </button>
-          <button id="signinwithgoogle">
+        </form>
+          <button id="signinwithgoogle" onClick={Loginwithgoogle}>
             <img src={google} alt="google"></img>
             <p style={{ position: "relative", top: "5px" }}>
               Login&nbsp;&nbsp;with&nbsp;&nbsp;Google
             </p>
           </button>
-        </form>
         <a href="/register" id="createnewaccount">
           Create new account ?
         </a>
