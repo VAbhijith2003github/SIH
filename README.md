@@ -1,5 +1,5 @@
 # Inclusive Learning Hub
-
+![Logo](src/images/The Code Crusaders.jpeg)
 ## Introduction
 
 Welcome to the Inclusive Learning Hub repository, a platform designed to empower specially-abled students by improving their skills and helping them with job placements. This platform is fully aligned with disability laws and aims to be a game-changer in providing accessible and quality education to all.
