@@ -10,28 +10,22 @@ import Footer from "../reusablecomponents/footer";
 import landingimg from "../../images/landingimg.jpg";
 import Navbarcomp from "../reusablecomponents/navbar";
 
-
-
 const HomePage = () => {
   return (
     <>
+      <Header />
+      <Navbarcomp />
       <section className="landing" id="landing">
-        <Header />
-        <Navbarcomp />
-        <img src={landingimg} alt="" className="landingimg" id="landingimg" />
-        <div className="bannertext container-fluid">
-        <p style={{fontSize:"3rem",color:"white"}}>"ACCESIBILITY TO EDUCATION IS A BASIC HUMAN RIGHT"</p>
-        </div>
+        {/* <div className="banner">
+        <p style={{fontSize:"3.5rem",color:"white"}} className="bannertext">"ACCESIBILITY TO EDUCATION IS A BASIC HUMAN RIGHT"</p>
+        </div> */}
       </section>
-      {/* <Navbar/>
-        <div>
-        <Banner/>
-        </div>
-        <Vision/>
+      <About />
+      <Footer />
+      {/*<Vision/>
         <Features/>
         <Resources/>
         <AboutUs/> */}
-        <Resource/>
         <Footer/> 
     </>
   );
