@@ -120,6 +120,7 @@ body::-webkit-scrollbar-thumb {
 
 /*################################################### Navbar ##################################################################*/
 .topnav {
+
   background: linear-gradient(to right, #000000, #4d4d4d);
   width: 100%;
   display: flex;
@@ -132,6 +133,7 @@ body::-webkit-scrollbar-thumb {
   position: sticky;
   position: -webkit-sticky;
   top: 0px;
+  z-index: 2;
   backdrop-filter: blur(4.6px);
   -webkit-backdrop-filter: blur(4.6px);
   padding: 0px 50px;
@@ -441,4 +443,194 @@ ul a {
 }
 #createnewaccount:hover {
   color: rgba(255, 255, 255);
+}
+/*################################################### Vision ################################*/
+.visionouter{
+  width:100%;
+  height: 100%;
+  /* background-image: url(C:\Users\Aditya\Desktop\jharkhand\SIH\src\images\visionbg.webp); */
+  
+  
+  } 
+  .visionimg{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+  }
+  .visionboxes{
+
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 300;
+    /* gap: 30px; */
+  }
+  .visionboxes h2{
+    font-weight: 700;
+
+  }
+  .visionboxes img{
+  padding-bottom: 5px;
+  }
+  
+  .visionbox1{
+    margin: 5vw;
+    /* margin-top: 10vw; */
+    background-color: rgb(245, 236, 228);
+    opacity: 0.6;
+  width :40vw;
+  height: 55vh;
+  padding: 15px;
+  padding-top: 30px;
+  }
+  .visionbox2{
+    margin: 5vw;
+    margin-top: 20vw;
+    background-color: rgb(245, 236, 228);
+    opacity: 0.6;
+    width :40vw;
+    height: 50vh;
+    padding: 15px;
+    padding-top: 30px;
+  }
+.speaker{
+  width: 30px;
+  height: 30px;
+}
+
+/*################################################### Features ################################*/
+.featuresouter{
+  background-image: url(../src/images/granitebg.webp);
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0%;
+
+
+
+}
+.featuresbg{
+width: 100vw;
+height: 100vh;
+position: absolute;
+z-index: -1;
+}
+.features-text {
+display: block;
+margin: auto; 
+width: 50%;
+padding-top:  10vh;
+text-align: center;
+
+}
+.features-text h1{
+background-color: #d9d9d9;
+display: inline;
+
+font-weight: 800; 
+}
+.features-text h1 img{
+height:35px;
+padding-bottom: 5px;
+}
+.features-container{
+display: grid;
+margin-left: -14vw; 
+margin-top: 20px;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+gap: 70px;
+}
+
+
+
+
+
+
+
+.cards-list {
+z-index: 0;
+width: 100%;
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+.card {
+margin: 30px auto;
+width: 250px;
+height: 375px;
+border-radius: 40px;
+
+
+/* box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22); */
+/* cursor: pointer;
+transition: 0.4s;*/
+} 
+
+.card .card_image {
+width: inherit;
+height: inherit;
+border-radius: 40px;
+}
+
+.card .card_image img {
+width: inherit;
+height: inherit;
+border-radius: 40px;
+object-fit: cover;
+}
+
+.card .card_title {
+display: block;
+
+z-index: 1;
+background: rgba(204, 204, 204, 0.5);
+text-align: center;
+color: #000000;
+border-radius: 40px 40px 40px 40px;
+font-family: sans-serif;
+font-weight:700;
+
+text-align: center;
+font-size: 13px;
+margin-top: -320px;
+margin-left: 25px;
+width: 200px;
+height: 80px;
+padding-top:15px ;
+}
+
+/* .card:hover {
+transform: scale(0.9, 0.9);
+box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+  -5px -5px 30px 15px rgba(0,0,0,0.22);
+} */
+
+.title-white {
+color: white;
+}
+
+.title-black {
+color: black;
+}
+.card2 {
+margin-top: 25vh;
+}
+.card4 {
+margin-top: 25vh;
+}
+@media all and (max-width: 900px) {
+.card-list {
+  /* On small screens, we are no longer using row direction but column */
+  flex-direction: column;
+}
+.features-container{
+  grid-template-columns: 1fr;
+}
+
 }

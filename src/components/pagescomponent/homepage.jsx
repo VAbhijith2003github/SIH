@@ -3,7 +3,7 @@ import Header from "../reusablecomponents/header";
 // import Navbar from "../reusablecomponents/navbar";
 // import Banner from "../reusablecomponents/banner";
 // import Vision from "../reusablecomponents/vision";
-// import Features from "../reusablecomponents/features";
+import Features from "../reusablecomponents/features";
 // import Resources from "../reusablecomponents/resource";
 // import AboutUs from "../reusablecomponents/header";
 import Footer from "../reusablecomponents/footer";
@@ -21,10 +21,11 @@ const HomePage = () => {
         <p style={{fontSize:"3.5rem",color:"white"}} className="bannertext">"ACCESIBILITY TO EDUCATION IS A BASIC HUMAN RIGHT"</p>
         </div> */}
       </section>
+      <Features/>
       <About />
       <Footer />
-      {/*<Vision/>
-        <Features/>
+      {/* <Vision/>
+        
         <Resources/>
         <AboutUs/> */}
     </>
