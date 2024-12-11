@@ -8,6 +8,12 @@ const Navbarcomp = () => {
     } else {
       x.className = "topnav";
     }
+    var y = document.getElementById("landing")
+    if (y.className === "landing") {
+      y.className += " menuclicked";
+    } else {
+      y.className = "landing";
+    }
   }
   return (
     <div class="topnav" id="myTopnav">
